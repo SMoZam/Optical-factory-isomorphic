@@ -1,0 +1,132 @@
+/* ---------------- La boutique ----------------- */
+
+.boutique-section-wrapper {
+  width: 100vw;
+  height: 700px;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.boutique-section-wrapper p {
+  box-sizing: border-box;
+  width: 42%;
+  background-color: white;
+  padding: 5%;
+  margin: 0;
+}
+
+.lequipe-wrapper .head-banner {
+  margin: 0;
+  margin-top: 95px;
+}
+
+.boutique-services-section {
+  margin-top: -1%;
+}
+
+/* .lequipe-version {
+  margin: 0;
+  margin-top: -25%;
+} */
+
+@media (max-width: 768px) {
+  .lequipe-wrapper .head-banner {
+    margin-top: 69px;
+  }
+  /* -----------------------Marques Details------------------------------ */
+  .marques-details-boutique-section {
+    height: 563px;
+  }
+  .marques-details-boutique-section .boutique-section-wrapper {
+    height: 818px;
+  }
+  /* ----------------- Boutique -------------------- */
+  .boutique-section-wrapper {
+    width: 100%;
+  }
+  .boutique-section-wrapper p {
+    width: 100%;
+  }
+  .quote-section {
+    width: 100vw;
+  }
+  .quote-section h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .services-section {
+    margin-top: 40%;
+  }
+  .services-section-img {
+    position: relative;
+  }
+  .boutique-title-container {
+    width: 80%;
+    position: absolute;
+    top: -15%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  .boutique-title-container2 {
+    top: -25%;
+  }
+  .boutique-title-container h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+  }
+  .services-section-img .boutique-title-container .not-active-service {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: fit-content;
+    margin: 15px;
+    margin-left: 10%;
+    -webkit-text-stroke: 0px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    opacity: 0.6;
+  }
+  .services-section-img .boutique-title-container .active-service {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: fit-content;
+    margin: 15px;
+    margin-left: 10%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+  }
+  .boutique-second-text {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .boutique-item-maison-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin-left: 22%;
+  }
+  .maison-section-img6 {
+    margin-top: 2%;
+  }
+}

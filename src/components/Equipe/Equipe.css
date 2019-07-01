@@ -1,0 +1,85 @@
+/* ------------------L'équipe --------------------*/
+
+.our-misssion {
+  margin: 0;
+}
+
+.boutique-item-container {
+  margin: 3% 0;
+}
+
+.our-misssion .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-misssion .text h2 {
+  /* margin-top:100px;  */
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.34;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.our-misssion .text p {
+  text-align: center;
+  width: 60%;
+}
+
+.our-members {
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.our-members div {
+  margin: 4% 1%;
+}
+
+.our-members div h4 {
+  margin: 7% 0% 5%;
+}
+
+.our-members div p {
+  margin: 0%;
+}
+.marques-list-item-large .equipe-list-overlay h2{
+  font-size: 70px;
+}
+
+@media (max-width: 768px) {
+  /* --------------- L'équipe --------------------- */
+  .our-members {
+    flex-direction: column;
+    margin: 0;
+  }
+  .our-misssion .text h2 {
+    font-size: 40px;
+    margin: 10% 0% 0;
+  }
+  .our-misssion .text p {
+    width: 80%;
+    margin-bottom: 35px;
+  }
+  .our-members div {
+    margin: 0;
+  }
+  .our-members div img {
+    width: 100vw;
+    margin: 0;
+  }
+  .our-members div h4 {
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 8%
+  }
+  .our-members div p {
+    margin-left: 8%;
+    margin-bottom: 12%;
+  }
+}

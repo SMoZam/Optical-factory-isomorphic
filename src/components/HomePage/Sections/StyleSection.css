@@ -1,0 +1,210 @@
+/* ------------------- Style-section------------------------ */
+
+/* --------------mySlider css ------------------*/
+
+.mySlider {
+    overflow: hidden;
+    /* width: 605px; */
+    /* display: inline-block; */
+    float: left;
+    width: 42%;
+    height: auto;
+}
+
+.mySlider figure div {
+    width: 50%;
+    float: left;
+}
+
+
+
+.mySlider figure img {
+    width: 100%;
+    /* height: 100vh; */
+    /* height: 861.58px; */
+    float: left;
+}
+
+.mySlider figure {
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    animation: 7s slidy infinite;
+    animation-delay: 5s;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    10% {
+        left: -100%;
+    }
+    50% {
+        left: -100%;
+    }
+    60% {
+        left: -100%;
+    }
+    70% {
+        left: 0%
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.mySlider3 figure {
+    animation: 0s slidy infinite;
+}
+
+/* ------------------------------------------- */
+
+.style-section {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.boutique-style-section {
+    margin-top: -4px;
+}
+
+.style-section-wrapper {
+    width: 100%;
+}
+
+.animation-overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 42%;
+}
+
+.tech-animation-overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.style-section-left-container {
+    width: 43%;
+    float: left;
+    padding: 5% 10% 9% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.eshop-section-left-container {
+    padding: 5% 10% 7% 5%;
+}
+
+.style-section-left-container h3 {
+    margin-top: 0;
+    width: 70%;
+}
+
+.style-section-left-container a {
+    margin: 20% auto 0 0;
+}
+
+.style-section-left-container p {
+    width: 90%;
+    padding: 0;
+    margin-top: -2%;
+    padding-left: 3%; 
+    border-left: 2px solid transparent;
+    border-image: url("../../../vertical_line.svg") 50 stretch;
+    -webkit-border-image: url("../../../vertical_line.svg") 50 stretch;
+    border-right: none;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.symbole-corner {
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+/*--------------------- Mobile ------------------------------ */
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* ----------------------- Style Section ------------------ */
+    .style-section {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .symbole-corner {
+        display: none;
+    }
+    .mySlider {
+        overflow: hidden;
+        width: 100vw;
+    }
+    .style-section-wrapper {
+        margin-top: 10%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .style-section-left-container {
+        margin-left: 8%;
+        margin-top: 10%;
+        padding-left: 0;
+    }
+    .style-section-left-container {
+        width: 80vw;
+    }
+    .style-section-left-container p {
+        margin-top: -5%;
+        width: 100%;
+        border-right: 0px solid transparent;
+        /* border: none;
+        border-image: none; */
+        /* padding: 0 */
+    }
+    .style-section-left-container h4 {
+        margin-top: 0;
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    .style-section-left-container h3 {
+        margin-top: 0;
+        width: 100%;
+    }
+    .style-section-left-container a {
+        background-color: #e8e1db;
+        color: black;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-bottom: 40px;
+        /* width: 50%; */
+    }
+    .style-section-left-container a:hover {
+        background-color: black;
+        color: white;
+    }
+    .eshop-section-left-container {
+        margin-top: 100px;
+    }
+}

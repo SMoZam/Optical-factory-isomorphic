@@ -1,0 +1,113 @@
+.video-hero-section-wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* min-width: 1440px; */
+    position: relative;
+}
+
+.video-hero-section-wrapper video {
+    width: 120%;
+    min-height: 100%;
+    /* height: 100%; */
+    margin: 0;
+}
+
+.overlay-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #323232;
+    opacity: 0.6;
+}
+
+.overlay-video-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-video-text h1 {
+    color: white;
+    margin: 0;
+    margin-top: -3%;
+}
+
+.overlay-video-text h2 {
+    margin: 0;
+    /* margin-left: 15%; */
+    color: white;
+    font-size: 25px;
+}
+
+.overlay-video-text div {}
+
+.overlay-video-text .btn {
+    background-color: #f3e030;
+    color: black;
+    white-space: nowrap;
+}
+
+.overlay-video-text .btn:hover {
+    background-color: #323232;
+    color: white;
+}
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.Modal:focus {
+    border: none;
+}
+
+.wistia_embed {
+    border: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+    .video-hero-section-wrapper video {
+        width: auto;
+        height: 100vh;
+    }
+    .Modal {
+        width: 80vw;
+    }
+    .wistia_embed {
+        width: 80vw;
+        height: auto;
+    }
+    .overlay-video-text h1 {
+        font-size: 85px;
+    }
+    .overlay-video-text h2 {
+        font-size: 20px;
+    }
+}

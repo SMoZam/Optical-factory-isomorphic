@@ -1,0 +1,81 @@
+/* ----------------------------Montures-section----------------------------- */
+
+.montures-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.montures-section-wrapper {
+    width: 42%;
+    height: 241px;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.montures-section p {
+    width: 55%;
+    margin-top: 4%;
+    margin-left: 20%
+}
+
+.montures-section a {
+    align-self: flex-end;
+    margin-top: -5%;
+}
+
+.montures-section .mySlider2 {
+    background-color: #E8E1DB;
+    margin: -241px 0;
+}
+
+/*--------------------- Mobile ------------------------------ */
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* -------------------Monture Section -------------------------------*/
+    .montures-section {
+        height: 600px;
+    }
+    .montures-section-wrapper {
+        margin-top: 15%;
+        width: 100vw;
+        height: auto;
+    }
+    .monture-section-slider {
+        height: 308px;
+        margin-top: 0;
+    }
+    .montures-section p {
+        width: 80vw;
+        margin-top: 4%;
+        margin-left: 8%;
+    }
+    .montures-section a {
+        margin-left: 8%;
+        margin-bottom: 40px;
+        align-self: flex-start;
+        font-weight: bold;
+        margin-top: 2%;
+    }
+    .montures-section .controlled-slider {
+        /* height: 600px; */
+    }
+    .active-material, .material {
+        font-size: 3rem;
+    }
+    .materials-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -37%;
+        /* background-position: 50% 50%; */
+        /* height: 308px; */
+    }
+}

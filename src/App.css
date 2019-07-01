@@ -1,0 +1,498 @@
+/* -------------Design System Guide-------------- */
+
+/* Couleurs primaires */
+
+/* #000
+#E8E1DB
+red #A42A36 */
+
+/* Fonts */
+
+/* body {
+  font-family: 'Anton', sans-serif;
+} */
+
+@font-face {
+  font-family: 'Din-condensed';
+  src: url('./fonts/FF_DIN_Condensed_Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/Gotham-Book.otf') format('otf'), url('./fonts/Gotham-Book.ttf') format('ttf'), url('./fonts/Gotham-Book.woff') format('woff');
+  font-style: normal;
+}
+
+/* -------------------General--------------------- */
+
+html {
+  font-size: 20px;
+  font-family: 'Gotham';
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* width: 100vw; */
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* width: 100vw; */
+}
+
+h1 {
+  font-family: 'Anton';
+  font-size: 10rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #000000;
+}
+
+h2, h3 {
+  font-family: 'Anton';
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.33px;
+  color: #000000;
+}
+
+h4 {
+  font-family: 'Anton';
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0;
+  letter-spacing: 0.7px;
+  color: #000000;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'Gotham';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: var(--dark-grey);
+  /* font-weight: 400; */
+}
+
+.btn {
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 20px 65px;
+  height: 65px;
+  box-sizing: border-box;
+  background: #333333;
+  color: #fff;
+  border-radius: 0;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+  border-image: url("./line.png") 1 20 / 1px round;
+  /* border-image: url("./line2.png")  27 23  round space; */
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #000;
+  border: 2px solid transparent;
+  border-image: url("./line.png") 1 20 / 1px round;
+  color: #000;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.head-banner {
+  margin-top: 95px;
+  padding-top: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.head-banner h1 {
+  color: #ffffff;
+  position: absolute;
+  font-size: 7rem;
+  left: 10%;
+  top: 18%;
+}
+
+.head-banner h2 {
+  color: #ffffff;
+  position: absolute;
+  left: 20%;
+  top: 35%
+}
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-box img {
+  animation: loading-spin infinite 1.5s linear;
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* -----------------Header-------------------- */
+
+.fixed-header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255);
+}
+
+.absolute-header {
+  width: 100vw;
+  position: absolute;
+  /* top: 0; */
+  background: rgba(255, 255, 255, 0);
+}
+
+header {
+  display: block;
+  position: absolute;
+  width: 80vw;
+  height: 95px;
+  z-index: 1000;
+  /* transition: all 0.5s; */
+}
+
+header .logo-perignon {
+  margin-left: 135px;
+  margin-top: 15px;
+}
+
+header .logo-perignon img {
+  width: 103px;
+}
+
+header a {
+  float: left;
+  padding: 0 10px 5px 10px;
+}
+
+.myNav {
+  float: right;
+  margin: 37px 135px 24px 24px;
+  transition: all 0.7s;
+}
+
+.myNav a {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+.myNav .last-link a {
+  color: #f3e030;
+  border-bottom: 2px solid white;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: bold;
+}
+
+.myNav .last-link a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.myNav .one-link a {
+  color: white;
+  white-space: nowrap;
+}
+
+.myNav .one-link a:hover {
+  color: #f3e030;
+  text-decoration: none;
+}
+
+/* -----------------Dropdown Navbar-------------------------- */
+
+.active-dropdown-link-container {
+  position: absolute;
+  width: 850px;
+  top: 35px;
+  left: -353px;
+  margin: 19%;
+  padding: 19%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323232;
+}
+
+.dropdown-link-container {
+  display: none;
+}
+
+.triangle {
+  border-left: 2px solid #f3e030;
+  display: flex;
+  flex-direction: column;
+}
+
+.one-dropdown-link {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Brandon-Grotesque';
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(36, 41, 48, 0.6);
+}
+
+.active-dropdown-link-container .one-link {
+  margin: 5%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+/*  ------------------------ Footer -------------------------- */
+
+.footer-wrapper {
+  padding-top: 2%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333333;
+}
+
+footer h5 {
+  font-family: 'Gotham';
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #f3e030;
+}
+
+footer ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+footer li {
+  list-style-type: none;
+  font-family: 'Gotham';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+footer li a {
+  list-style-type: none;
+  font-family: 'Gotham';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer li:hover, footer li:hover a {
+  color: grey;
+  cursor: pointer;
+}
+
+footer .infos-de-contact li:hover {
+  color: #ffffff;
+  cursor: auto;
+}
+
+/* -------------Loading page ---------------- */
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.loading-box img {
+  /* animation: loading-spin infinite 1s linear; */
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+/* @keyframes loading-spin{
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* ------------------------Responsive media queries------------------ */
+
+/* --------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 1158px) {
+  html {
+    font-size: 15px;
+  }
+  .myNav {
+    display: none;
+  }
+  header .logo-perignon {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .absolute-header {
+    background: rgb(255, 255, 255);
+  }
+}
+
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  /* --------Animations ---------- */
+  .animation-overlay {
+    display: none;
+  }
+  .tech-animation-overlay {
+    display: none;
+  }
+  /* -----------General------------ */
+  p {
+    font-size: 17px;
+  }
+  h3, h2 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  /* ----------Head Banner--------- */
+  .head-banner {
+    height: 290px;
+    margin: 0;
+    padding: 0;
+    margin-top: 69px;
+    /* background-size: 90% 60%;
+    background-position: 0% 100%;      */
+  }
+  .head-banner h1 {
+    font-size: 3.6rem;
+    top: 33%;
+    /* top: none; */
+  }
+  .head-banner h2 {
+    font-size: 2rem;
+  }
+  /* -------------Header------------ */
+  header .logo-perignon {
+    margin-left: 2%;
+    margin-top: 5px;
+  }
+  header .logo-perignon img {
+    padding-top: 0;
+    height: 50px;
+  }
+  .absolute-header {
+    background: rgb(255, 255, 255);
+  }
+  /* ----------- Navbar --------------*/
+  header {
+    background-color: white;
+    height: 70px;
+  }
+  header a {
+    padding: 10px 10px;
+  }
+  header a img {
+    width: 70px;
+  }
+  .myNav .one-link a {
+    color: white;
+  }
+  .myNav .last-link a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  /*---------------------- Footer ------------------------------*/
+  .footer-wrapper {
+    flex-direction: column;
+    height: 500px;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+    /* margin-top: 5%; */
+  }
+}

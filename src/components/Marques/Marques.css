@@ -1,0 +1,103 @@
+/* -------------------------Marques--------------------- */
+
+.marques-head-banner h2{
+  position: absolute;
+    left: 18%;
+    top: 25%;
+}
+
+.marques-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.marques-list li {
+  margin-right: 30px;
+  margin-bottom: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.marques-list-item-large, .marques-list-item {
+  max-width: 90%;
+}
+
+.marques-list-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(3, 2, 2, 0.938);
+  opacity: 0.5;
+  top: 0;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+}
+
+.marques-list-overlay h2 {
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
+
+.marques-list-overlay:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 2, 2, 0.096);
+  opacity: 1;
+}
+
+.marques-list-overlay:hover h2 {
+  color: white;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.quote-section h2 {
+  margin: 1%;
+}
+
+.marques-details-demandes-section {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .marques-list-item-large img, .marques-list-item img {
+    width: 100vw;
+    margin: 0;
+    /* height: 20%; */
+  }
+  .marques-list-overlay {
+    width: 100vw;
+    bottom: 3px;
+  }
+  .marques-list {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  .marques-list a {
+    width: 100vw;
+  }
+  .marques-list-overlay h2 {
+    font-size: 50px;
+  }
+  .marques-list li {
+    margin-right: 0;
+  }
+}

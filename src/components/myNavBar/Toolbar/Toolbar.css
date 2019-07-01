@@ -1,0 +1,14 @@
+.toolbar{
+    display: none;
+    position: absolute;
+    top:20px;
+    right: 8%;
+}
+
+
+@media (max-width: 1158px) {
+.toolbar{
+    display: block;
+}
+
+}

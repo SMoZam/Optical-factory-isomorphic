@@ -1,0 +1,161 @@
+/* ---------------------Home Page--------------------- */
+
+
+.video-link-container .btn img{
+  stroke: aqua;
+}
+
+
+
+/* ------------ Controlled Slider ----------------- */
+
+/* ---------------------------------------------------- */
+
+
+
+.monture-section-slider {
+  margin-top: -241px;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  /* height: 100vh; */
+}
+
+.controlled-slider {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.controlled-slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.controlled-slide {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.controlled-slide img{
+  height:  100%;
+  width: 100%;
+}
+
+
+
+.dots-container {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+}
+
+.materials-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.material {
+  font-size: 5rem;
+  font-family: 'Anton';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff00;
+  -webkit-text-stroke: 1px white;
+}
+
+.active-material {
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 5rem;
+  font-family: 'Anton';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+/* ------------ End of Controlled Slider ----------------- */
+
+/* ---------------------------------------------------- */
+
+/* mySlider2 css */
+
+.mySlider2 {
+  overflow: hidden;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.mySlider2 figure div {
+  width: 50%;
+  float: left;
+}
+
+.mySlider2 figure .mySlide2-img-container {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mySlider2 figure .mySlide2-img-container h2 {
+  /* width: 250px; */
+  font-size: 100px;
+  font-family: 'Anton';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff00;
+  -webkit-text-stroke: 1px white;
+}
+
+.mySlider2 figure {
+  position: relative;
+  width: 200%;
+  margin: 0;
+  left: 0;
+  animation: 10s slidy2 infinite;
+}
+
+@keyframes slidy2 {
+  0% {
+    left: 0%;
+  }
+  10% {
+    left: -100%;
+  }
+  50% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  70% {
+    left: 0%
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media (max-width: 768px){
+  .home-page-container{
+    /* margin-top: 70px */
+  }
+}
+

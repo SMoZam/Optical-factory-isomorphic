@@ -1,0 +1,101 @@
+.maison-section-wrapper2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 60%;
+    height: 180px;
+    margin: 0 0 0 10%;
+    padding: 3% 10%;
+}
+
+.maison-section-wrapper2 p {
+    margin: 5%;
+    margin-top: 7%
+}
+
+.maison-section-wrapper2 .second-text {
+    margin-top: 5%;
+    width: 45%;
+}
+
+.maison-section-wrapper2 .service-section-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.maison-section-wrapper2-overlay {
+    transition: all 300ms ease-in;
+    display: flex;
+    position: absolute;
+    background-color: rgba(83, 83, 83, 0.945);
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.maison-section-wrapper2-overlay .btn {
+    margin-left: 40%;
+    margin-top: 8%;
+}
+
+.maison-section-wrapper2-overlay:hover {
+    display: block;
+    display: flex;
+    opacity: 1;
+    transition: all 300ms ease-in;
+}
+
+.maison-section-img4 {
+    width: 100%;
+    margin-top: -18,65%;
+    margin-left: 0%;
+}
+
+.maison-section-img6 {
+    width: 100%;
+    /* margin-top: -14.5%; */
+    margin-left: 0%;
+}
+
+/*--------------------- Mobile ------------------------------ */
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+
+@media (max-width: 1440px) {
+    .maison-section-img4 {
+        margin-top: -18.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section-wrapper2 .second-text {
+        display: none;
+    }
+    .service-section-logo {
+        display: none;
+    }
+    .services-section-wrapper2 {
+        display: none;
+    }
+    .services-section-wrapper2-overlay .btn {
+        display: none;
+    }
+    .services-section-img4 {
+        display: none;
+    }
+    .services-section-img5 {
+        display: none;
+    }
+    .boutique-second-text {
+        margin-bottom: 12%;
+    }
+    .maison-section-wrapper2 .btn {
+        margin-left: 10%;
+    }
+}

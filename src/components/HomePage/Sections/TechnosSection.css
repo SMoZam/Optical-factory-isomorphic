@@ -1,0 +1,102 @@
+/* ----------------------Technos-section ------------------------*/
+
+.technos-section {
+    /* margin-top: 181px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.technos-section-left-container {
+    float: left;
+    width: 48%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 11%;
+    /* padding: 5% 10% 13% 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.technos-section-left-container p {
+    width: 90%;
+    padding: 0;
+    margin-top: -2%;
+    padding-left: 20px;
+    border-left: solid 2px #dddcdc;
+    border-image: url("../../../vertical_line.svg") 50 stretch;
+    -webkit-border-image: url("../../../vertical_line.svg") 50 stretch;
+}
+
+.technos-section-left-container a {
+    margin: 15% auto 0 0;
+}
+
+.technos-section-left-container h3 {
+    margin-top: -2%;
+}
+
+/*--------------------- Mobile ------------------------------ */
+
+/* -------------------------------------------------------------- */
+
+/* -------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* ------------------------------Technos Section------------------------------ */
+    .technos-section {
+        /* margin-top: 20%; */
+    }
+    .boutique-technos-section {
+        margin-bottom: -19%;
+    }
+    .technos-section .mySlider {
+        overflow: hidden;
+        width: 100vw;
+        margin-bottom: 50px;
+        ;
+    }
+    .technos-section-wrapper {
+        margin-top: 10%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .boutique-technos-section-wrapper {
+        margin-top: 35%;
+    }
+    .boutique-technos-section-wrapper h4 {
+        white-space: nowrap;
+    }
+    .technos-section-left-container {
+        width: 80vw;
+        margin-top: 5%;
+        margin-left: 8%;
+        padding-left: 0;
+    }
+    /* .technos-section-left-container * {
+    font-size: 1.2em;
+  } */
+    .technos-section-left-container h3 {
+        width: 100%;
+    }
+    .technos-section-left-container a {
+        margin-top: 5%;
+        margin-bottom: 45px;
+    }
+    .technos-section-left-container p {
+        margin-top: -5%;
+        width: 100%;
+        border-right: 0px solid transparent;
+    }
+}
+
+@media (max-width: 320px) {
+    h4 {
+        font-size: 13px;
+    }
+    .technos-section-left-container {
+        margin-top: 60%;
+    }
+}

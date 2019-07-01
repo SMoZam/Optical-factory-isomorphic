@@ -1,0 +1,17 @@
+.toggle-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+@media (max-wdth: 768px) {
+    .toggle-button img {
+        margin-right: 8%;
+    }
+}

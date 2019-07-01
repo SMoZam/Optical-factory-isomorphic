@@ -1,0 +1,458 @@
+/*------------------ Lunette List Page ------------------*/
+
+.filter-list {
+  margin: 10% 0;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-item-first {
+  border-right: #f3e030 solid 2px;
+}
+
+.dropdown-item {
+  font-family: 'Gotham';
+  font-size: 1em;
+  margin-right: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.filter-input {
+  display: none;
+}
+
+.filter-input:active {
+  /* font-weight: bold; */
+}
+
+.dropdown-item:active {
+  /* font-weight: bold; */
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.filter-selected {
+  /* font-weight: bold; */
+  opacity: 1;
+
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 70px 0 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-list a {
+  text-decoration: none;
+}
+
+.product-list li {
+  margin-bottom: 12%;
+  position: relative;
+}
+
+.product-list-item {
+  width: 390px;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  padding: 5% 10%;
+}
+
+.product-list-item:hover {
+  border: 2px solid #E8D631;
+}
+
+.product-list-item h2 {
+  margin-top: -10%;
+  text-align: center;
+  position: relative;
+  font-family: 'Anton';
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.product-list-item h3 {
+  margin-top: -5%;
+  letter-spacing: 0.4px;
+  text-transform: none;
+  font-family: 'Gotham';
+  font-size: 23px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  line-height: 1.48;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.product-list-item img {
+  width: 400px;
+  height: 260px;
+}
+
+.no-result {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/* ----------------------------Lunettes Details page ---------------------------- */
+
+.lunettes-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  padding: 4%
+}
+
+.lunettes-detail-wrapper img {
+  width: 100%;
+  /* height: 300px; */
+}
+
+.lunettes-img-container {
+  width: 80vw;
+  position: relative;
+}
+
+.lunettes-img-container .close-logo {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  width: 2%;
+}
+
+.lunettes-title-container {
+  width: 80vw;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lunettes-title-container a {
+  width: 7%;
+  height: 8%;
+}
+
+.lunettes-title-container h2 {
+  text-align: center;
+}
+
+.table-container {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+}
+
+.table-container table {
+  width: 40vw;
+  border-collapse: collapse;
+  margin: 0 2% 0 0;
+}
+
+.table-container tr {
+  border-bottom: 1px solid #f3e030
+}
+
+.table-container td {
+  width: 25%;
+  opacity: 0.6;
+  font-family: 'Gotham';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.15;
+  letter-spacing: normal;
+  color: #242930;
+}
+
+.table-container .td-object {
+  width: 60%;
+  opacity: 0.8;
+}
+
+/* ------------------ Lunettes ----------------------- */
+
+.lunettes-wrapper {
+  /* height: 900px; */
+  margin: 0;
+}
+
+.lunettes-genre-head-banner h2 {
+  position: absolute;
+  left: 15%;
+  top: 28%;
+}
+
+.lunettes-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 70px; */
+}
+
+.lunettes-list li {
+  width: 34%;
+  margin-bottom: -6px;
+  position: relative;
+}
+
+.lunette-categorie {
+  position: relative;
+}
+
+.lunette-categorie img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.lunette-categorie-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(3, 2, 2, 0.938);
+  opacity: 0.5;
+  top: 0;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+}
+
+.lunette-categorie-overlay h2 {
+  margin-top: 30%;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 3px white;
+}
+
+.lunettes-list li .btn {
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  color: black;
+  background: #faf8f5;
+  font-weight: bold;
+}
+
+.lunette-categorie-overlay:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(3, 2, 2, 0.205);
+  opacity: 1;
+}
+
+.lunette-categorie-overlay:hover h2 {
+  color: white;
+}
+
+.lunette-categorie-overlay:hover .btn {
+  color: #a42a36;
+  background-color: #E8E1DB;
+}
+
+.lunette-categorie-overlay .btn:hover {
+  background: black;
+  color: white;
+}
+
+.link-lunettes-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+/* .lunette-categorie-overlay .btn {
+  
+  background-color: grey;
+  
+  } */
+
+@media (max-wdth: 1158px) {
+  /* -------------------------------------------------- */
+  /* ---------------Lunettes Details ------------------ */
+  .product-details {
+    padding-top: 10%;
+  }
+  .lunettes-title-container {
+    justify-content: space-between;
+    width: 80vw;
+  }
+  .lunettes-title-container h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .lunettes-title-container a {
+    width: 10%
+  }
+  .lunettes-img-container {
+    width: 80vw;
+  }
+  .table-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .table-container table {
+    margin: 0;
+  }
+  .table-container td {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .link-lunettes-container {
+    margin-bottom: 0;
+    margin: 10% 0;
+  }
+  .product-list-item img {
+    width: 375px;
+    height: 245px;
+  }
+
+
+.product-list-item:hover {
+  border: 2px solid transparent;
+}
+  /* --------------------------------------------------- */
+  /* -------------------Lunettes ----------------------- */
+  .lunette-categorie-overlay h2 {
+    margin-top: -15px;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 3px white;
+  }
+  .filter-list {
+    margin: 10% 0;
+    width: 100%;
+  }
+  .dropdown-item {
+    font-size: 1.5rem;
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .lunettes-list {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .lunettes-list li {
+    width: 100vw;
+    /* height: 400px; */
+    overflow: hidden;
+  }
+  .lunettes-list li .btn {
+    bottom: 10%;
+    /* left: auto; */
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lunette-categorie img {
+    width: 100%;
+  }
+  /* -------------------------------------------------- */
+  /* ---------------Lunettes Details ------------------ */
+  .lunettes-detail-wrapper {
+    width: 80vw;
+  }
+  .lunettes-detail-wrapper h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .product-details {
+    padding-top: 10%;
+  }
+  .lunettes-title-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+  .lunettes-title-container h3 {
+    width: 80vw;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .lunettes-title-container a {
+    order: 1;
+    margin: 0 17%;
+  }
+  .lunettes-title-container a img {
+    width: 75px;
+    /* height: 60px; */
+  }
+  .lunettes-img-container {
+    width: 100vw;
+  }
+  .lunettes-img-container .close-logo {
+    top: 5%;
+    right: 5%;
+    width: 5%;
+  }
+  .table-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .table-container table {
+    margin: 0;
+    width: 100%;
+  }
+  .table-container .td-object {
+    width: 25%;
+  }
+}
+
+@media (max-width: 375px) {
+  .dropdown-item {
+    font-size: 1.4rem;
+  }
+  .lunettes-list li .btn {
+    width: 55%;
+  }
+}
+
+@media (max-width: 320px) {
+  .dropdown-item {
+    font-size: 1.1rem;
+  }
+  .lunettes-list li .btn {
+    width: 65%;
+  }
+}
